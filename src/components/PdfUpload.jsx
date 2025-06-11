@@ -1,25 +1,47 @@
 import React, { useState } from "react";
 import { TbFileUpload } from "react-icons/tb";
 import Spinner from "../shared/Spinner";
+import useAuth from "../Hooks/useAuth";
+import axios from "axios";
+import useAxiosPublic from "../Hooks/useAxiosPublic";
 
 const PdfUpload = () => {
-  const [uploading, setUploading] = useState(false);
+  const { uploading, setUploading, handleSubmit } = useAuth();
   const [pdfFile, setPdfFile] = useState(null);
+  const axiosPublic = useAxiosPublic();
 
-//   pdf file capturing by the input
+  //   pdf file capturing by the input
 
-const handleFileChange = (e) => {
+  const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
     if (selectedFile && selectedFile.type === "application/pdf") {
       setPdfFile(selectedFile);
-      console.log("PDF selected:", selectedFile.name);
+      //   console.log("PDF selected:", selectedFile.name);
     } else {
       setPdfFile(null);
       alert("Please select a valid PDF file");
     }
   };
-  
-  console.log(pdfFile)
+
+  const handleFileSubmit = async (e) => {
+    e.preventDefault();
+    if (!pdfFile) {
+      alert("Please select a PDF file before submitting.");
+      return;
+    }
+    const formData = new FormData();
+    formData.append("pdf", pdfFile);
+    try {
+      const res = await axiosPublic.post("digitalize/process-pdf", formData, {
+        headers: { "Content-Type": "multipart/form-data" }
+      });
+      console.log(res.data);
+    } catch (error) {
+      console.error("Error uploading PDF:", error);
+      alert("Failed to upload PDF. Please try again.");
+    }
+  };
+
   return (
     <div className="border-2 border-dashed border-orange-600 rounded-lg p-8 text-center transition-all  hover:bg-base-100 w-xl bg-base-300 hover:border-orange-400 group  ease-in-out duration-300">
       <div className="flex justify-center mb-4 text-orange-600 group-hover:text-orange-400 transition ease-in-out duration-300">
@@ -30,8 +52,9 @@ const handleFileChange = (e) => {
       </p>
       <p className="text-sm text-base-content/50 mb-4">or</p>
 
-      <form className="" action="">
-        <input onChange={handleFileChange}
+      <form onSubmit={handleFileSubmit} className="" action="">
+        <input
+          onChange={handleFileChange}
           type="file"
           className="file-input bg-orange-600 hover:bg-orange-300 hover:text-black transition ease-in-out duration-300"
         />
