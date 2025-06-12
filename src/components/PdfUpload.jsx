@@ -29,15 +29,20 @@ const PdfUpload = () => {
       alert("Please select a PDF file before submitting.");
       return;
     }
+    setUploading(true);
     const formData = new FormData();
     formData.append("pdf", pdfFile);
     try {
       const res = await axiosPublic.post("digitalize/process-pdf", formData, {
-        headers: { "Content-Type": "multipart/form-data" }
+        headers: { "Content-Type": "multipart/form-data" },
       });
+      if (res.data) {
+        setUploading(false);
+      }
       console.log(res.data);
     } catch (error) {
       console.error("Error uploading PDF:", error);
+      setUploading(false);
       alert("Failed to upload PDF. Please try again.");
     }
   };
@@ -47,24 +52,27 @@ const PdfUpload = () => {
       <div className="flex justify-center mb-4 text-orange-600 group-hover:text-orange-400 transition ease-in-out duration-300">
         <TbFileUpload size={30} />
       </div>
-      <p className="mb-2 font-medium text-black text-xl">
-        Drag & drop your PDF here to digitize
-      </p>
-      <p className="text-sm text-base-content/50 mb-4">or</p>
+      {!uploading && (
+        <div>
+          <p className="mb-4 font-medium text-black text-xl ">
+            Chose your PDF to digitize
+          </p>{" "}
+          <form onSubmit={handleFileSubmit} className="" action="">
+            <input
+              onChange={handleFileChange}
+              type="file"
+              className="file-input bg-orange-600 hover:bg-orange-300 hover:text-black transition ease-in-out duration-300"
+            />
+            <button
+              type="submit"
+              className="btn bg-orange-600  text-white hover:bg-orange-400 hover:text-black text-xl transition ease-in-out duration-300"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      )}
 
-      <form onSubmit={handleFileSubmit} className="" action="">
-        <input
-          onChange={handleFileChange}
-          type="file"
-          className="file-input bg-orange-600 hover:bg-orange-300 hover:text-black transition ease-in-out duration-300"
-        />
-        <button
-          type="submit"
-          className="btn bg-orange-600  text-white hover:bg-orange-400 hover:text-black text-xl transition ease-in-out duration-300"
-        >
-          Submit
-        </button>
-      </form>
       {/* <input type="file" id="pdf-upload" className="hidden" accept=".pdf" /> */}
       {/* <label
         htmlFor="pdf-upload"
