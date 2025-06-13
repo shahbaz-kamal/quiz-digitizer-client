@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { TbFileUpload } from "react-icons/tb";
 import Spinner from "../shared/Spinner";
 import useAuth from "../Hooks/useAuth";
-import axios from "axios";
+
 import useAxiosPublic from "../Hooks/useAxiosPublic";
 
 const PdfUpload = () => {
-  const { uploading, setUploading, handleSubmit } = useAuth();
+  const { uploading, setUploading, refetch, showJSONData, setShowJSONData } =
+    useAuth();
   const [pdfFile, setPdfFile] = useState(null);
   const axiosPublic = useAxiosPublic();
 
@@ -14,9 +15,9 @@ const PdfUpload = () => {
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
+
     if (selectedFile && selectedFile.type === "application/pdf") {
       setPdfFile(selectedFile);
-      //   console.log("PDF selected:", selectedFile.name);
     } else {
       setPdfFile(null);
       alert("Please select a valid PDF file");
@@ -30,6 +31,7 @@ const PdfUpload = () => {
       return;
     }
     setUploading(true);
+    setShowJSONData(false);
     const formData = new FormData();
     formData.append("pdf", pdfFile);
     try {
@@ -38,11 +40,14 @@ const PdfUpload = () => {
       });
       if (res.data) {
         setUploading(false);
+        await refetch();
+        setShowJSONData(true);
       }
       console.log(res.data);
     } catch (error) {
       console.error("Error uploading PDF:", error);
       setUploading(false);
+      setShowJSONData(false);
       alert("Failed to upload PDF. Please try again.");
     }
   };
