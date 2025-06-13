@@ -8,9 +8,9 @@ const Home = () => {
       <section className="">
         <Banner></Banner>
       </section>
-      <section className="mt-5">
+      {/* <section className="mt-5">
         <DigitizedData></DigitizedData>
-      </section>
+      </section> */}
     </div>
   );
 };
