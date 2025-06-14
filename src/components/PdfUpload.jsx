@@ -26,18 +26,19 @@ const PdfUpload = () => {
 
   const handleFileSubmit = async (e) => {
     e.preventDefault();
-    if (!pdfFile) {
-      alert("Please select a PDF file before submitting.");
-      return;
-    }
+    // if (!pdfFile) {
+    //   alert("Please select a PDF file before submitting.");
+    //   return;
+    // }
     setUploading(true);
     setShowJSONData(false);
     const formData = new FormData();
     formData.append("pdf", pdfFile);
     try {
-      const res = await axiosPublic.post("digitalize/process-pdf", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      // const res = await axiosPublic.post("digitalize/process-pdf", formData, {
+      //   headers: { "Content-Type": "multipart/form-data" },
+      // });
+      const res={data:"hello"}
       if (res.data) {
         setUploading(false);
         await refetch();

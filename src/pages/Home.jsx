@@ -12,7 +12,7 @@ const Home = () => {
       </section>
       {allQuestion && allQuestion.length > 0 && showJSONData && (
         <section className="mt-5">
-          <DigitizedData></DigitizedData>
+          <DigitizedData allQuestion={allQuestion}></DigitizedData>
         </section>
       )}
     </div>

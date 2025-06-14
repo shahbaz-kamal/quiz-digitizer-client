@@ -1,6 +1,31 @@
 import React from "react";
+import JSONData from "./JSONData";
 
-const DigitizedData = () => {
+const DigitizedData = ({ allQuestion }) => {
+  const keysToKeepOnlyInFirstObject = [
+    "_id",
+    "institution_name",
+    "exam_name",
+    "subject",
+    "paper",
+    "class_name",
+    "exam_duration",
+    "global_instructions"
+  ];
+  
+  const modifiedData = allQuestion.map((item, index) => {
+    if (index === 0) return item;
+  
+    // Remove the specified keys from all other objects
+    const newItem = { ...item };
+    keysToKeepOnlyInFirstObject.forEach(key => {
+      delete newItem[key];
+    });
+    return newItem;
+  });
+  
+  console.log(modifiedData);
+
   return (
     <div>
       <h1 className="text-center text-3xl font-bold mb-4">Generated Data</h1>
@@ -12,9 +37,12 @@ const DigitizedData = () => {
           name="my_tabs_6"
           className="tab"
           aria-label="JSON Data"
+          defaultChecked
         />
+
+        {/* table content  */}
         <div className="tab-content bg-base-100 border-base-300 p-6">
-          Tab content 1
+          <JSONData modifiedData={modifiedData}></JSONData>
         </div>
 
         <input
@@ -22,7 +50,7 @@ const DigitizedData = () => {
           name="my_tabs_6"
           className="tab"
           aria-label="Rebuilded Questions"
-          defaultChecked
+  
         />
         <div className="tab-content bg-base-100 border-base-300 p-6">
           Tab content 2

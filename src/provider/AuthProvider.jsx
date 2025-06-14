@@ -16,9 +16,9 @@ const AuthProvider = ({ children }) => {
     isLoading,
     refetch,
   } = useQuery({
-    queryKey: ["allData",showJSONData],
+    queryKey: ["allData", showJSONData],
     queryFn: async () => {
-      const res = await axiosPublic.get("get-all-data"); // Or your backend endpoint
+      const res = await axios.get("/sampleData.json"); // Or your backend endpoint
       return res.data;
     },
     refetchOnWindowFocus: false,
