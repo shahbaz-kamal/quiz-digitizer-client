@@ -7,13 +7,13 @@ const Banner = () => {
       className="hero rounded-md"
       style={{
         backgroundImage:
-          "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+          "url(https://i.ibb.co/m5k8kfFJ/quiz-digitizer-banner.png)",
       }}
     >
-      <div className="hero-overlay rounded-md"></div>
+      <div className="hero-overlay rounded-md bg-black opacity-70"></div>
       <div className="hero-content text-neutral-content text-center flex flex-col ">
         <div className="max-w-xl">
-          <h1 className="mb-5 text-5xl font-bold">
+          <h1 className="mb-5 text-5xl font-bold ">
             Digitize Your Quizzes. Instantly.
           </h1>
           <p className="mb-5">
@@ -21,7 +21,6 @@ const Banner = () => {
             ease. Our AI-powered platform extracts questions, options, and even
             diagrams, so you can build engaging online assessments in minutes.
           </p>
-     
         </div>
         <section>
           <PdfUpload></PdfUpload>

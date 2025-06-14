@@ -6,7 +6,12 @@ const RebuildedQuestion = ({ modifiedData }) => {
 
   const [selectedAnswers, setSelectedAnswers] = useState({});
 
-  const handleOptionClick = (questionId, partId, selectedOption, correctAnswer) => {
+  const handleOptionClick = (
+    questionId,
+    partId,
+    selectedOption,
+    correctAnswer
+  ) => {
     const key = `${questionId}_${partId}`;
     setSelectedAnswers((prev) => ({
       ...prev,
@@ -21,14 +26,34 @@ const RebuildedQuestion = ({ modifiedData }) => {
     <div className="p-6 space-y-6">
       {/* Exam Info */}
       <div className="bg-blue-50 p-4 rounded shadow">
-        <h1 className="text-3xl font-bold text-center mb-2">{examInfo.institution_name}</h1>
-        <p className="text-center text-2xl font-semibold">{examInfo.exam_name}</p>
-        <p className="text-center text-xl font-semibold">{examInfo.subject}</p>
-        <p className="text-center text-xl font-semibold">{examInfo.paper}</p>
-        <p className="text-center text-xl font-semibold">{examInfo.class_name}</p>
-        <p className="text-center text-lg mt-2">
-          <strong>Duration:</strong> {examInfo.exam_duration}
-        </p>
+        {examInfo.institution_name && (
+          <h1 className="text-3xl font-bold text-center mb-2">
+            {examInfo.institution_name}
+          </h1>
+        )}
+        {examInfo.exam_name && (
+          <p className="text-center text-2xl font-semibold">
+            {examInfo.exam_name}
+          </p>
+        )}
+        {examInfo.subject && (
+          <p className="text-center text-xl font-semibold">
+            {examInfo.subject}
+          </p>
+        )}
+        {examInfo.paper && (
+          <p className="text-center text-xl font-semibold">{examInfo.paper}</p>
+        )}
+        {examInfo.class_name && (
+          <p className="text-center text-xl font-semibold">
+            {examInfo.class_name}
+          </p>
+        )}
+        {examInfo.exam_duration && (
+          <p className="text-center text-lg mt-2">
+            <strong>Duration:</strong> {examInfo.exam_duration}
+          </p>
+        )}
 
         {examInfo.global_instructions?.length > 0 && (
           <div className="mt-4">
@@ -44,7 +69,10 @@ const RebuildedQuestion = ({ modifiedData }) => {
 
       {/* Questions */}
       {allQuestions.map((question) => (
-        <div key={question.id} className="p-4 border rounded-lg bg-white shadow">
+        <div
+          key={question.id}
+          className="p-4 border rounded-lg bg-white shadow"
+        >
           {question.individual_instructions && (
             <p className="text-sm text-gray-700 italic mb-3">
               {question.individual_instructions}
@@ -61,7 +89,7 @@ const RebuildedQuestion = ({ modifiedData }) => {
                 <img
                   src={diagram.diagram_img_url}
                   alt="Question diagram"
-                  className="w-[30%] border"
+                  className="w-[40%] border"
                 />
               )}
             </div>
@@ -90,7 +118,12 @@ const RebuildedQuestion = ({ modifiedData }) => {
                       <button
                         key={i}
                         onClick={() =>
-                          handleOptionClick(question.id, part.part_id, opt, part.correct_answer)
+                          handleOptionClick(
+                            question.id,
+                            part.part_id,
+                            opt,
+                            part.correct_answer
+                          )
                         }
                         className={`block w-full text-left px-4 py-2 border rounded transition 
                           ${
