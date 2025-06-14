@@ -35,10 +35,10 @@ const PdfUpload = () => {
     const formData = new FormData();
     formData.append("pdf", pdfFile);
     try {
-      // const res = await axiosPublic.post("digitalize/process-pdf", formData, {
-      //   headers: { "Content-Type": "multipart/form-data" },
-      // });
-      const res={data:"hello"}
+      const res = await axiosPublic.post("digitalize/process-pdf", formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
+      // const res={data:"hello"}
       if (res.data) {
         setUploading(false);
         await refetch();

@@ -1,5 +1,6 @@
 import React from "react";
 import JSONData from "./JSONData";
+import RebuildedQuestion from "./RebuildedQuestion";
 
 const DigitizedData = ({ allQuestion }) => {
   const keysToKeepOnlyInFirstObject = [
@@ -53,7 +54,7 @@ const DigitizedData = ({ allQuestion }) => {
   
         />
         <div className="tab-content bg-base-100 border-base-300 p-6">
-          Tab content 2
+         <RebuildedQuestion modifiedData={modifiedData}></RebuildedQuestion>
         </div>
       </div>
     </div>
