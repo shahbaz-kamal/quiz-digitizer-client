@@ -4,13 +4,13 @@ const RebuildedQuestion = ({ modifiedData }) => {
   const allQuestions = modifiedData.flatMap((item) => item.questions || []);
   const examInfo = modifiedData[0];
 
-  // State to track selected answers and feedback
   const [selectedAnswers, setSelectedAnswers] = useState({});
 
-  const handleOptionClick = (questionId, selectedOption, correctAnswer) => {
+  const handleOptionClick = (questionId, partId, selectedOption, correctAnswer) => {
+    const key = `${questionId}_${partId}`;
     setSelectedAnswers((prev) => ({
       ...prev,
-      [questionId]: {
+      [key]: {
         selected: selectedOption,
         isCorrect: selectedOption === correctAnswer,
       },
@@ -21,9 +21,7 @@ const RebuildedQuestion = ({ modifiedData }) => {
     <div className="p-6 space-y-6">
       {/* Exam Info */}
       <div className="bg-blue-50 p-4 rounded shadow">
-        <h1 className="text-3xl font-bold text-center mb-2">
-          {examInfo.institution_name}
-        </h1>
+        <h1 className="text-3xl font-bold text-center mb-2">{examInfo.institution_name}</h1>
         <p className="text-center text-2xl font-semibold">{examInfo.exam_name}</p>
         <p className="text-center text-xl font-semibold">{examInfo.subject}</p>
         <p className="text-center text-xl font-semibold">{examInfo.paper}</p>
@@ -45,7 +43,7 @@ const RebuildedQuestion = ({ modifiedData }) => {
       </div>
 
       {/* Questions */}
-      {allQuestions.map((question, index) => (
+      {allQuestions.map((question) => (
         <div key={question.id} className="p-4 border rounded-lg bg-white shadow">
           {question.individual_instructions && (
             <p className="text-sm text-gray-700 italic mb-3">
@@ -58,71 +56,70 @@ const RebuildedQuestion = ({ modifiedData }) => {
 
           {/* Diagram */}
           {question.diagram_info?.map((diagram, i) => (
-            <div key={i} className="my-4">
+            <div key={i} className="my-4 flex items-center justify-center">
               {diagram.diagram_img_url && (
                 <img
                   src={diagram.diagram_img_url}
                   alt="Question diagram"
-                  className="max-w-sm border"
+                  className="w-[30%] border"
                 />
               )}
             </div>
           ))}
 
-          {/* Question Parts */}
-          {question.parts.map((part, idx) => (
-            <div key={idx} className="mt-4">
-              {part?.question_text && (
-                <h4 className="mb-2 font-medium">
-                  {part.part_id}. {part.question_text}
-                </h4>
-              )}
+          {/* Parts */}
+          {question.parts.map((part, idx) => {
+            const key = `${question.id}_${part.part_id}`;
+            const userAnswer = selectedAnswers[key]?.selected;
+            const isCorrect = selectedAnswers[key]?.isCorrect;
+            const isAnswerChecked = userAnswer !== undefined;
 
-              <div className="space-y-2">
-                {part.options.map((opt, i) => {
-                  const userAnswer = selectedAnswers[question.id]?.selected;
-                  const isCorrect = selectedAnswers[question.id]?.isCorrect;
+            return (
+              <div key={idx} className="mt-4">
+                {part?.question_text && (
+                  <h4 className="mb-2 font-medium">
+                    {part.part_id}. {part.question_text}
+                  </h4>
+                )}
 
-                  const isSelected = userAnswer === opt;
-                  const isAnswerChecked = userAnswer !== undefined;
+                <div className="space-y-2">
+                  {part.options.map((opt, i) => {
+                    const isSelected = userAnswer === opt;
 
-                  return (
-                    <button
-                      key={i}
-                      onClick={() =>
-                        handleOptionClick(question.id, opt, part.correct_answer)
-                      }
-                      className={`block w-full text-left px-4 py-2 border rounded transition 
-                        ${
-                          isAnswerChecked && isSelected
-                            ? isCorrect
-                              ? "bg-green-100 border-green-500 text-green-700"
-                              : "bg-red-100 border-red-500 text-red-700"
-                            : "hover:bg-gray-100"
-                        }`}
-                    >
-                      {opt}
-                    </button>
-                  );
-                })}
+                    return (
+                      <button
+                        key={i}
+                        onClick={() =>
+                          handleOptionClick(question.id, part.part_id, opt, part.correct_answer)
+                        }
+                        className={`block w-full text-left px-4 py-2 border rounded transition 
+                          ${
+                            isAnswerChecked && isSelected
+                              ? isCorrect
+                                ? "bg-green-100 border-green-500 text-green-700"
+                                : "bg-red-100 border-red-500 text-red-700"
+                              : "hover:bg-gray-100"
+                          }`}
+                      >
+                        {opt}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Feedback */}
+                {isAnswerChecked && (
+                  <p
+                    className={`mt-2 text-sm font-semibold ${
+                      isCorrect ? "text-green-600" : "text-red-600"
+                    }`}
+                  >
+                    {isCorrect ? "Correct!" : "Incorrect. Try again."}
+                  </p>
+                )}
               </div>
-
-              {/* Feedback message */}
-              {selectedAnswers[question.id] && (
-                <p
-                  className={`mt-2 text-sm font-semibold ${
-                    selectedAnswers[question.id].isCorrect
-                      ? "text-green-600"
-                      : "text-red-600"
-                  }`}
-                >
-                  {selectedAnswers[question.id].isCorrect
-                    ? "Correct!"
-                    : "Incorrect. Try again."}
-                </p>
-              )}
-            </div>
-          ))}
+            );
+          })}
         </div>
       ))}
     </div>
