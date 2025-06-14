@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="400" src="https://github.com/shahbaz-kamal/quiz-digitizer-server/blob/main/src/assets/github_banner.JPG"  />
+  <img height="400" src="https://github.com/shahbaz-kamal/quiz-digitizer-client/blob/main/src/assets/github_banner.png"  />
 </div>
 
 ###
@@ -136,8 +136,8 @@ npm run dev
 ```
 
 <p align="center" style="display: flex; align-items: center; justify-content: center;">
-  <span style="font-size: 20px; font-weight: bold;">Backend</span>
-  <img src="https://cdn-icons-png.flaticon.com/128/16318/16318927.png" alt="Front End Icon" width="15" height="15" style="margin-left: 8px;" />
+  <span style="font-size: 20px; font-weight: bold;">Backend </span>
+  <img src="https://img.icons8.com/?size=50&id=2778&format=png" alt="Front End Icon" width="15" height="15" style="margin-left: 8px;" />
 </p>
 
 ###
@@ -179,4 +179,4 @@ npm start
 
 
 
-###
+
