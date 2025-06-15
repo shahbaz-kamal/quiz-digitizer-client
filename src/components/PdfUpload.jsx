@@ -6,13 +6,12 @@ import useAuth from "../Hooks/useAuth";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
 
 const PdfUpload = () => {
-  const { uploading, setUploading, refetch, setShowJSONData } =
-    useAuth();
+  const { uploading, setUploading, refetch, setShowJSONData } = useAuth();
   const [pdfFile, setPdfFile] = useState(null);
   const axiosPublic = useAxiosPublic();
 
   //   pdf file capturing by the input
-const handleFileChange = (e) => {
+  const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
 
     if (selectedFile && selectedFile.type === "application/pdf") {
@@ -36,8 +35,9 @@ const handleFileChange = (e) => {
     try {
       const res = await axiosPublic.post("digitalize/process-pdf", formData, {
         headers: { "Content-Type": "multipart/form-data" },
+        timeout: 1000 * 60 * 10,
       });
-    
+
       if (res.data) {
         setUploading(false);
         await refetch();
@@ -48,7 +48,7 @@ const handleFileChange = (e) => {
       console.error("Error uploading PDF:", error);
       setUploading(false);
       setShowJSONData(false);
-      alert("Failed to upload PDF. Please try again.");
+      alert(error.message);
     }
   };
 
