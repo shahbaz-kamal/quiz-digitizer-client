@@ -12,7 +12,8 @@ const RebuildedQuestion = ({ modifiedData }) => {
     selectedOption,
     correctAnswer
   ) => {
-    const key = `${questionId}_${partId}`;
+    const key = `${questionId}_${partId || "main"}`;
+
     setSelectedAnswers((prev) => ({
       ...prev,
       [key]: {
@@ -97,7 +98,8 @@ const RebuildedQuestion = ({ modifiedData }) => {
 
           {/* Parts */}
           {question.parts.map((part, idx) => {
-            const key = `${question.id}_${part.part_id}`;
+            const key = `${question.id}_${part.part_id || "main"}`;
+
             const userAnswer = selectedAnswers[key]?.selected;
             const isCorrect = selectedAnswers[key]?.isCorrect;
             const isAnswerChecked = userAnswer !== undefined;

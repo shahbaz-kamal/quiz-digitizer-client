@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     allowedHosts: [
-      "9ebd-103-55-145-6.ngrok-free.app", // ✅ Add your ngrok frontend domain here
+      "2efb-103-55-145-6.ngrok-free.app", // ✅ Add your ngrok frontend domain here
     ],
   },
 });

@@ -1,790 +1,469 @@
 [
-    {
-      "institution_name": "Anglo-Chinese School (Primary)",
-      "exam_name": "2023 P6 PRELIMINARY EXAM",
-      "subject": "MATHEMATICS",
-      "paper": "Paper 2",
-      "class_name": "Primary Six",
-      "exam_duration": "1 hour 30 minutes",
-      "global_instructions": [
-        "This question paper consists of 16 printed pages, including the cover page.",
-        "Do not turn this page until you are told to do so.",
-        "Follow all instructions carefully.",
-        "Answer all questions.",
-        "Use a dark blue or black ballpoint pen to write your answers in the space provided for each question.",
-        "Do not use correction fluid/tape or highlighters.",
-        "You are allowed to use a calculator."
-      ],
-      "questions": [],
-      "_id": "684c8f09bd3fa8cc3b1c617f"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": "Mathematics",
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q1",
-          "individual_instructions": "Questions 1 to 5 carry 2 marks each. Show your working clearly in the space provided for each question and write your answers in the spaces provided. For questions which require units, give your answers in the units stated. (10 marks)",
-          "main_question_text": "The cost of 3 chairs and 5 tables is $360. The cost of 6 chairs and 15 tables is $900. What is the cost of 1 table? (Round off the answer to the nearest $10)",
-          "diagram_info": [],
-          "parts": [
-            {
-              "part_id": "main",
-              "type": "Problem_Solving",
-              "question_text": null,
-              "options": [
-                "$30",
-                "$35",
-                "$40",
-                "$45"
-              ],
-              "correct_answer": "$40"
-            }
-          ]
-        },
-        {
-          "id": "Q2",
-          "individual_instructions": null,
-          "main_question_text": "ABCD is a rhombus. ∠BAC = 51°. What is the sum of ∠x and ∠y?",
-          "diagram_info": [
-            {
-              "diagram_description": "Diagram of a rhombus ABCD with an internal diagonal AC. Angle BAC is labeled 51 degrees, angle ABC is labeled y, and angle ACD is labeled x.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 247,
-                  "y_min": 504,
-                  "x_max": 560,
-                  "y_max": 673
-                }
-              ],
-              "position": "center",
-              "is_table": false,
-              "page_number": "1",
-              "diagram_img_url": "https://i.ibb.co/Zp9Rczp8/3898aaf6363b.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "main",
-              "type": "Problem_Solving",
-              "question_text": null,
-              "options": [
-                "102",
-                "119",
-                "129",
-                "139"
-              ],
-              "correct_answer": "129"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8f22bd3fa8cc3b1c6180"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q3",
-          "individual_instructions": null,
-          "main_question_text": "A tank contained 6l of water. The graph below shows the amount of water left in a tank at the end of each day. What is the total amount of water used on Day 2 and Day 4?",
-          "diagram_info": [
-            {
-              "diagram_description": "Line graph titled 'Amount of Water Left' showing the amount of water (in Litres) remaining in a tank over four days. The Y-axis is 'Amount of Water (L)' ranging from 0 to 6, and the X-axis shows 'Day 1', 'Day 2', 'Day 3', 'Day 4'. The line goes from approximately (Day 1, 4.9L) to (Day 2, 4.2L) to (Day 3, 2.8L) to (Day 4, 1.4L).",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 174,
-                  "y_min": 239,
-                  "x_max": 700,
-                  "y_max": 580
-                }
-              ],
-              "position": "center",
-              "is_table": false,
-              "page_number": "2",
-              "diagram_img_url": "https://i.ibb.co/9Ks5pV2/4a6262754f2f.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "main",
-              "type": "Problem_Solving",
-              "question_text": null,
-              "options": [
-                "0.7 L",
-                "1.4 L",
-                "2.1 L",
-                "2.8 L"
-              ],
-              "correct_answer": "2.1 L"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8f2ebd3fa8cc3b1c6181"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": "Mathematics",
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q4",
-          "individual_instructions": null,
-          "main_question_text": "Mrs Lim bought a watch at a discount of 15% and she paid $124.10, not including GST. What is the original price of the watch including 8% GST?",
-          "diagram_info": [],
-          "parts": [
-            {
-              "part_id": "main",
-              "type": "Problem_Solving",
-              "question_text": null,
-              "options": [
-                "$146.00",
-                "$155.63",
-                "$157.68",
-                "$160.00"
-              ],
-              "correct_answer": "$157.68"
-            }
-          ]
-        },
-        {
-          "id": "Q5",
-          "individual_instructions": null,
-          "main_question_text": "Mrs Sim bought a bag for $140. She paid the cashier in $10 and $5 notes. If there were fifteen notes altogether, how many $10 notes were there?",
-          "diagram_info": [],
-          "parts": [
-            {
-              "part_id": "main",
-              "type": "Problem_Solving",
-              "question_text": null,
-              "options": [
-                "10",
-                "12",
-                "13",
-                "15"
-              ],
-              "correct_answer": "13"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8f3abd3fa8cc3b1c6182"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q6",
-          "individual_instructions": "For questions 6 to 17, show your working clearly in the space provided for each question and write your answers in the spaces provided. The number of marks available is shown in brackets [] at the end of each question or part-question. (45 marks)",
-          "main_question_text": "The figure below is formed by joining five identical 3/4-circle discs. Points A, B, C, D and E are centres of each 3/4-circle disc. Given that the distance between B and D is 17 cm and the distance between the first and the last disc is 48 cm, find the length AB.",
-          "diagram_info": [
-            {
-              "diagram_description": "Diagram showing five identical 3/4-circle discs joined in an S-shape. Points A, B, C, D, E are centers. Horizontal distances of 17 cm (between B and D) and 48 cm (total length) are indicated. A label '2 cm' is shown near point A, appearing to indicate the thickness of the disc.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 105,
-                  "y_min": 395,
-                  "x_max": 632,
-                  "y_max": 532
-                }
-              ],
-              "position": "center",
-              "is_table": false,
-              "page_number": "04",
-              "diagram_img_url": "https://i.ibb.co/HTXb32fj/2dfc24eb79d9.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "main",
-              "type": "Problem_Solving",
-              "question_text": null,
-              "options": [],
-              "correct_answer": "12cm"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8f55bd3fa8cc3b1c6183"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q7",
-          "individual_instructions": null,
-          "main_question_text": "Serena has a monthly salary of $8650. She spent 1/5 of her money on food. The pie chart below shows how she used her monthly salary.",
-          "diagram_info": [
-            {
-              "diagram_description": "Pie chart showing Serena's monthly salary usage, with segments labeled for Savings ($3000), Transport ($865), Rent ($2422), Food, and Shopping.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 307,
-                  "y_min": 215,
-                  "x_max": 597,
-                  "y_max": 420
-                }
-              ],
-              "position": "center",
-              "is_table": false,
-              "page_number": "05",
-              "diagram_img_url": "https://i.ibb.co/TxybjMC7/83d78bb6dd62.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "Problem_Solving",
-              "question_text": "How much money did Serena spend on food?",
-              "options": [],
-              "correct_answer": "$1730"
-            },
-            {
-              "part_id": "b",
-              "type": "Problem_Solving",
-              "question_text": "What fraction of her salary did Serena spend on rent and transport?",
-              "options": [],
-              "correct_answer": "N/A"
-            },
-            {
-              "part_id": "c",
-              "type": "Problem_Solving",
-              "question_text": "What percentage of her salary did she spend on shopping? Give your answer correct to nearest 1%.",
-              "options": [],
-              "correct_answer": "N/A"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8f63bd3fa8cc3b1c6184"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q8",
-          "individual_instructions": null,
-          "main_question_text": "The figure below is not drawn to scale. ABEF is a parallelogram and BCDE is a trapezium. BE//CD, AB//FD and BC//AD. DF is a straight line. ∠ADF = 42° and ∠DAF = 68°.",
-          "diagram_info": [
-            {
-              "diagram_description": "Geometric figure showing a parallelogram ABEF and a trapezium BCDE. Points A, B, C, D, E, F are labeled. Angles ∠DAF = 68° and ∠ADF = 42° are marked. Parallel lines BE//CD, AB//FD and BC//AD are indicated by arrows.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 307,
-                  "y_min": 200,
-                  "x_max": 588,
-                  "y_max": 388
-                }
-              ],
-              "position": "center",
-              "is_table": false,
-              "page_number": "06",
-              "diagram_img_url": "https://i.ibb.co/cSXDcpYH/eb9d6b7c60ec.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "SAQ",
-              "question_text": "Find ∠BCD.",
-              "options": [],
-              "correct_answer": "N/A"
-            },
-            {
-              "part_id": "b",
-              "type": "SAQ",
-              "question_text": "Find ∠ABE.",
-              "options": [],
-              "correct_answer": "N/A"
-            },
-            {
-              "part_id": "c",
-              "type": "SAQ",
-              "question_text": "Find ∠BEF.",
-              "options": [],
-              "correct_answer": "N/A"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8f86bd3fa8cc3b1c6185"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q9",
-          "individual_instructions": null,
-          "main_question_text": "The distance between Town A and Town B is 1260 km. Train X travels from Town A to Town B at 8.00 a.m. at an average speed of 230 km/h. At the same time, Train Y travels from Town B to Town A at an average speed of 190km/h.",
-          "diagram_info": [
-            {
-              "diagram_description": "Context for a word problem involving two trains traveling towards each other.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 118,
-                  "y_min": 121,
-                  "x_max": 680,
-                  "y_max": 840
-                }
-              ],
-              "position": "top",
-              "is_table": false,
-              "page_number": "07",
-              "diagram_img_url": "https://i.ibb.co/CKJ0yrrN/41574352c3f5.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "Problem_Solving",
-              "question_text": "What time did they meet?",
-              "options": [
-                "10:00 a.m.",
-                "11:00 a.m.",
-                "12:00 p.m.",
-                "1:00 p.m."
-              ],
-              "correct_answer": "11:00 a.m."
-            },
-            {
-              "part_id": "b",
-              "type": "SAQ",
-              "question_text": "How far would each train have travelled when they meet on the way?",
-              "options": [],
-              "correct_answer": "N/A"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8fa2bd3fa8cc3b1c6186"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q10",
-          "individual_instructions": null,
-          "main_question_text": "The following table shows the charges for making an overseas call to Australia.",
-          "diagram_info": [
-            {
-              "diagram_description": "Table titled 'Overseas Call Charges' showing 'First 15 minutes' costing '$2.60' and 'Every additional minute' costing 'p ¢ per minute'.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 204,
-                  "y_min": 190,
-                  "x_max": 605,
-                  "y_max": 257
-                }
-              ],
-              "position": "center",
-              "is_table": true,
-              "page_number": "8",
-              "diagram_img_url": "https://i.ibb.co/hJsRdGqr/59fe0705cbb4.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "Problem_Solving",
-              "question_text": "Mrs Jarits paid $32 for a phone call to her sister in Australia. What was the duration of the call? Leave your answer in terms of p.",
-              "options": [
-                "15 + 2940/p minutes",
-                "15 + 29.40p minutes",
-                "2940p + 15 minutes",
-                "15 + p/2940 minutes"
-              ],
-              "correct_answer": "15 + 2940/p minutes"
-            },
-            {
-              "part_id": "b",
-              "type": "Problem_Solving",
-              "question_text": "Given that p = 60, find the duration of the call Mrs Jafnus made.",
-              "options": [
-                "64 minutes",
-                "54 minutes",
-                "74 minutes",
-                "60 minutes"
-              ],
-              "correct_answer": "64 minutes"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8fb7bd3fa8cc3b1c6187"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q11",
-          "individual_instructions": null,
-          "main_question_text": "Bottles A, B and C contain 7.35 litres of oil altogether. 1/5 of the oil in Bottle A is transferred to Bottle B. After that, 1/5 of the oil in Bottle B is transferred to Bottle C. Now, Bottle A has twice the amount of oil in Bottle B and Bottle B has twice the amount of oil in Bottle C.",
-          "diagram_info": [],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "Problem_Solving",
-              "question_text": "How much oil was transferred from Bottle A to Bottle B?",
-              "options": [
-                "1.05 litres",
-                "0.84 litres",
-                "1.26 litres",
-                "0.525 litres"
-              ],
-              "correct_answer": "1.05 litres"
-            },
-            {
-              "part_id": "b",
-              "type": "Problem_Solving",
-              "question_text": "How much oil was in Bottle C at first?",
-              "options": [
-                "0.525 litres",
-                "0.42 litres",
-                "0.63 litres",
-                "1.05 litres"
-              ],
-              "correct_answer": "0.525 litres"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8fc7bd3fa8cc3b1c6188"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q12",
-          "individual_instructions": null,
-          "main_question_text": "Marcus is playing a video game. On his first win, he obtains 3 points. For every subsequent win, he will receive 2 additional points more than his previous win.",
-          "diagram_info": [],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "Problem_Solving",
-              "question_text": "Marcus gets 6 wins in a row. What will be his score for the 6th win?",
-              "options": [
-                "11",
-                "12",
-                "13",
-                "14"
-              ],
-              "correct_answer": "13"
-            },
-            {
-              "part_id": "b",
-              "type": "Problem_Solving",
-              "question_text": "How many times must he win the game in a row for him to achieve 99 points?",
-              "options": [
-                "9",
-                "48",
-                "49",
-                "50"
-              ],
-              "correct_answer": "49"
-            }
-          ]
-        }
-      ],
-      "_id": "684c8fdebd3fa8cc3b1c6189"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": "Mathematics",
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q13",
-          "individual_instructions": null,
-          "main_question_text": "The figure below is made up of four squares of sides 10 cm, four quadrants and eight semicircles. Find the total area of the shaded parts. (Take π = 3.14)",
-          "diagram_info": [
-            {
-              "diagram_description": "Geometric figure showing a 10cm x 10cm square with a complex shaded pattern of leaves and crescents inside. The overall side length is indicated as 10 cm.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 279,
-                  "y_min": 337,
-                  "x_max": 579,
-                  "y_max": 636
-                }
-              ],
-              "position": "center",
-              "is_table": false,
-              "page_number": "11",
-              "diagram_img_url": "https://i.ibb.co/tTwXSTDh/27e63e0a1617.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "main",
-              "type": "Problem_Solving",
-              "question_text": null,
-              "options": [
-                "198",
-                "100",
-                "78.5",
-                "57"
-              ],
-              "correct_answer": "198"
-            }
-          ]
-        }
-      ],
-      "_id": "684c9027bd3fa8cc3b1c618a"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q14",
-          "individual_instructions": null,
-          "main_question_text": "The container shown below is made up of 2 cuboids and a 6-cm cube. The small cuboid has a square base of side 3m. The dimension of the big cuboid is 16 cm by 9 cm by 5 cm. There is 864 mt of water in the container and the height of the water level in the small cuboid and the cube s the same. What is the height of the water level from the base of the container?",
-          "diagram_info": [
-            {
-              "diagram_description": "Diagram of a container made of a large cuboid at the base, with a 6-cm cube and a smaller cuboid (3x3 base) placed on top. Dimensions for the large cuboid are 16 cm by 9 cm by 5 cm. The diagram shows the water level inside the container.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 194,
-                  "y_min": 276,
-                  "x_max": 776,
-                  "y_max": 550
-                }
-              ],
-              "position": "center",
-              "is_table": false,
-              "page_number": "12",
-              "diagram_img_url": "https://i.ibb.co/mC9htpLp/ce7bba805f97.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "main",
-              "type": "Problem_Solving",
-              "question_text": null,
-              "options": [
-                "5 cm",
-                "6 cm",
-                "7 cm",
-                "8.2 cm"
-              ],
-              "correct_answer": "6 cm"
-            }
-          ]
-        }
-      ],
-      "_id": "684c9043bd3fa8cc3b1c618b"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": null,
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q15",
-          "individual_instructions": null,
-          "main_question_text": "Simon, Marc and Wilson sat for their Math exam. The average score of Simon and Marc was 85 marks. The average score of Marc and Wilson was 91 marks. The average score of Simon and Wilson was 82 marks.",
-          "diagram_info": [],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "Problem_Solving",
-              "question_text": "What was the average mark of the three boys?",
-              "options": [
-                "86",
-                "84",
-                "88",
-                "90"
-              ],
-              "correct_answer": "86"
-            },
-            {
-              "part_id": "b",
-              "type": "Problem_Solving",
-              "question_text": "Simon's mark was recorded incorrectly. He was given an additional of 7.5 marks. What is the correct average score of the 3 boys?",
-              "options": [
-                "83.5",
-                "84.5",
-                "82.5",
-                "85.5"
-              ],
-              "correct_answer": "83.5"
-            }
-          ]
-        }
-      ],
-      "_id": "684c9053bd3fa8cc3b1c618c"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": "Mathematics",
-      "paper": null,
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q16",
-          "individual_instructions": null,
-          "main_question_text": "The figure below is not drawn to scale. ABE is an equilateral triangle and BCD is an isosceles triangle. ABC and BDF are straight lines and AC//EF. ∠EBD = 90° and ∠BED = 43°.",
-          "diagram_info": [
-            {
-              "diagram_description": "Geometric figure with points A, B, C, D, E, F. Triangle ABE is equilateral, triangle BCD is isosceles. Lines ABC and BDF are straight. AC is parallel to EF. Angles EBD is 90 degrees and BED is 43 degrees.",
-              "diagram_bounding_boxes": [
-                {
-                  "x_min": 148,
-                  "y_min": 237,
-                  "x_max": 804,
-                  "y_max": 520
-                }
-              ],
-              "position": "center",
-              "is_table": false,
-              "page_number": "14",
-              "diagram_img_url": "https://i.ibb.co/C5gF8tnB/7eb4214facbc.jpg"
-            }
-          ],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "SAQ",
-              "question_text": "Find ∠CBF.",
-              "options": [],
-              "correct_answer": "30°"
-            },
-            {
-              "part_id": "b",
-              "type": "SAQ",
-              "question_text": "Find ∠BDC.",
-              "options": [],
-              "correct_answer": "75°"
-            },
-            {
-              "part_id": "c",
-              "type": "SAQ",
-              "question_text": "Find ∠EDF.",
-              "options": [],
-              "correct_answer": "21°"
-            }
-          ]
-        }
-      ],
-      "_id": "684c9060bd3fa8cc3b1c618d"
-    },
-    {
-      "institution_name": null,
-      "exam_name": null,
-      "subject": "Mathematics",
-      "paper": "Paper 2",
-      "class_name": null,
-      "exam_duration": null,
-      "global_instructions": null,
-      "questions": [
-        {
-          "id": "Q17",
-          "individual_instructions": null,
-          "main_question_text": "A box contained some twenty-cent, fifty-cent and one-dollar coins. 24% of the coins are twenty-cent coins. The ratio of the number of fifty-cent coins to the number of one-dollar coins is 7 : 12. When 62.5% of the twenty-cent coins were removed, the total number of coins decreased by 15%. In the end there were 255 coins left.",
-          "diagram_info": [],
-          "parts": [
-            {
-              "part_id": "a",
-              "type": "Problem_Solving",
-              "question_text": "How many twenty-cent coins were removed?",
-              "options": [
-                "45",
-                "30",
-                "60",
-                "72"
-              ],
-              "correct_answer": "45"
-            },
-            {
-              "part_id": "b",
-              "type": "Problem_Solving",
-              "question_text": "How many one-dollar coins were there in the box?",
-              "options": [
-                "144",
-                "84",
-                "120",
-                "228"
-              ],
-              "correct_answer": "144"
-            }
-          ]
-        }
-      ],
-      "_id": "684c9074bd3fa8cc3b1c618e"
-    }
-  ]
+  {
+    "institution_name": "Ai Tong School",
+    "exam_name": "2024 Term 2 Review",
+    "subject": "P4 Science",
+    "paper": "BP-129",
+    "class_name": "4",
+    "exam_duration": "40 minutes",
+    "global_instructions": [
+      "For each question from 1 to 9, four options are given. One of them is the correct answer. Make your choice (1, 2, 3 or 4) and shade your answer on the Optical Answer Sheet."
+    ],
+    "questions": [
+      {
+        "id": "1",
+        "individual_instructions": null,
+        "main_question_text": "The diagram below shows the human digestive system.",
+        "diagram_info": [
+          {
+            "diagram_description": "A diagram showing the human digestive system with parts labeled A, B, C, and D. A points to the mouth, B to the stomach, C to the pancreas, and D to the small intestine.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 0,
+                "y_min": 387,
+                "x_max": 892,
+                "y_max": 625
+              }
+            ],
+            "position": "above",
+            "is_table": false,
+            "page_number": "1",
+            "diagram_img_url": "https://i.ibb.co/DP9h17rf/b6dbb90662c9.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": "Which of the following statements is correct?",
+            "options": [
+              "Digestion is completed in part C.",
+              "No digestion takes place in part A.",
+              "No digestive juice is found in part B.",
+              "Digested food is absorbed into the blood in part D."
+            ],
+            "correct_answer": "Digested food is absorbed into the blood in part D."
+          }
+        ]
+      }
+    ],
+    "_id": "684ff775361b010c21d8e6d8"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": null,
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [
+      {
+        "id": "2",
+        "individual_instructions": null,
+        "main_question_text": "Study the table below on human body systems.\nWhich of the following is correct?",
+        "diagram_info": [
+          {
+            "diagram_description": "A table detailing four options, each with a body system, an organ, and its function.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 84,
+                "y_min": 177,
+                "x_max": 949,
+                "y_max": 305
+              }
+            ],
+            "position": "below",
+            "is_table": true,
+            "page_number": "2",
+            "diagram_img_url": "https://i.ibb.co/fYW2bgzs/acad6e309af3.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": "",
+            "options": [
+              "Skeletal | Brain | To protect our main organs.",
+              "Muscular | Muscles | To give our body its shape.",
+              "Circulatory | Heart | To pump blood to the rest of the body.",
+              "Respiratory | Blood | To transport waste materials away from different parts of the body."
+            ],
+            "correct_answer": "Circulatory | Heart | To pump blood to the rest of the body."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "individual_instructions": null,
+        "main_question_text": "A, B, C, D and E are organs in the digestive system. The graph below shows the amount of undigested food leaving each organ after a meal.\nWhich of the following is correct?",
+        "diagram_info": [
+          {
+            "diagram_description": "A bar graph showing the amount of undigested food leaving each of the five organs labeled B, C, D, and E on the x-axis.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 84,
+                "y_min": 395,
+                "x_max": 949,
+                "y_max": 595
+              }
+            ],
+            "position": "below",
+            "is_table": false,
+            "page_number": "2",
+            "diagram_img_url": "https://i.ibb.co/qYC0RybS/b240aed60298.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": "",
+            "options": [
+              "Mouth: A, Gullet: D, Small Intestine: B, Large Intestine: E",
+              "Mouth: B, Gullet: C, Small Intestine: D, Large Intestine: A",
+              "Mouth: E, Gullet: B, Small Intestine: C, Large Intestine: D",
+              "Mouth: B, Gullet: E, Small Intestine: A, Large Intestine: D"
+            ],
+            "correct_answer": "Mouth: B, Gullet: C, Small Intestine: D, Large Intestine: A"
+          }
+        ]
+      }
+    ],
+    "_id": "684ff7f1361b010c21d8e6d9"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": "BP-131",
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [
+      {
+        "id": "4",
+        "individual_instructions": null,
+        "main_question_text": "Alex and Kaylyn made the following statements about substance X which is in a container.",
+        "diagram_info": [
+          {
+            "diagram_description": "A diagram showing a beaker with substance X, and two children, Alex and Kaylyn, with speech bubbles stating that substance X is a solid and a liquid respectively.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 90,
+                "y_min": 169,
+                "x_max": 910,
+                "y_max": 315
+              }
+            ],
+            "position": "above",
+            "is_table": false,
+            "page_number": "3",
+            "diagram_img_url": "https://i.ibb.co/9m4MCg9f/1a8928d11894.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": "Which of the following tests can help determine which student is correct?",
+            "options": [
+              "To find out if substance X has mass.",
+              "To find out if substance X can be compressed.",
+              "To find out if substance X has a definite shape.",
+              "To find out if substance X has a definite volume."
+            ],
+            "correct_answer": null
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "individual_instructions": null,
+        "main_question_text": "An experiment was set up as shown below using a sealed metal container which holds 60 cm³ of water and 30 cm³ of air. 10 cm³ of water was removed from the container through the tap.",
+        "diagram_info": [
+          {
+            "diagram_description": "A diagram of a sealed metal container with 60 cm³ of water and 30 cm³ of air, equipped with a pump and a tap.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 90,
+                "y_min": 491,
+                "x_max": 910,
+                "y_max": 645
+              }
+            ],
+            "position": "above",
+            "is_table": false,
+            "page_number": "3",
+            "diagram_img_url": "https://i.ibb.co/Q3tb8NwS/03187b51b5dd.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": "Which of the following correctly shows the amount of air in the container at the end of the experiment and the explanation of the results?",
+            "options": [
+              "30 cm³ | Air can be compressed.",
+              "30 cm³ | Air has no definite volume.",
+              "40 cm³ | Air can be compressed.",
+              "40 cm³ | Air has no definite volume."
+            ],
+            "correct_answer": null
+          }
+        ]
+      }
+    ],
+    "_id": "684ff821361b010c21d8e6da"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": "BP-132",
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [
+      {
+        "id": "6",
+        "individual_instructions": null,
+        "main_question_text": "The diagram below shows two objects, X and Y, placed on a beam balance.\n\nBased on the observation above, which statement is correct?",
+        "diagram_info": [
+          {
+            "diagram_description": "A diagram showing two objects, X and Y, on a beam balance. Object X is larger and lower than object Y, indicating it has a greater mass.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 0,
+                "y_min": 147,
+                "x_max": 842,
+                "y_max": 315
+              }
+            ],
+            "position": "above",
+            "is_table": false,
+            "page_number": "4",
+            "diagram_img_url": "https://i.ibb.co/3tCk0rK/bb3f0e8ee7ab.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": null,
+            "options": [
+              "Y has a greater mass than X.",
+              "Y has a greater volume than X.",
+              "Both X and Y are made of the same material.",
+              "Objects with smaller mass, have smaller volume."
+            ],
+            "correct_answer": null
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "individual_instructions": null,
+        "main_question_text": "Which one of the following is a source of light?",
+        "diagram_info": [
+          {
+            "diagram_description": "Four images are shown as options: a lit lamp, a mirror, an apple, and the moon.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 0,
+                "y_min": 519,
+                "x_max": 842,
+                "y_max": 810
+              }
+            ],
+            "position": "below",
+            "is_table": false,
+            "page_number": "4",
+            "diagram_img_url": "https://i.ibb.co/wZ7T6kNW/126f2b2412f9.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": null,
+            "options": [
+              "a lit lamp",
+              "a mirror",
+              "an apple",
+              "the moon"
+            ],
+            "correct_answer": "a lit lamp"
+          }
+        ]
+      }
+    ],
+    "_id": "684ff870361b010c21d8e6db"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": "BP-133",
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [
+      {
+        "id": "8",
+        "individual_instructions": null,
+        "main_question_text": "Kaelyn conducted an experiment and realised that she can see light through the holes of the cardboards when they are aligned. However, when one of the cardboards is shifted slightly, she no longer sees the light.",
+        "diagram_info": [
+          {
+            "diagram_description": "A diagram showing an experiment with a torchlight, three cardboards with holes, and an observer named Kaelyn. It demonstrates that light travels in a straight line, as the light can only be seen when the holes are aligned.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 2,
+                "y_min": 172,
+                "x_max": 998,
+                "y_max": 322
+              }
+            ],
+            "position": null,
+            "is_table": false,
+            "page_number": "5",
+            "diagram_img_url": "https://i.ibb.co/nsnch1hs/3dda035acb26.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": "Which is the correct reason for her observation?",
+            "options": [
+              "Light can be reflected.",
+              "Light cannot be blocked.",
+              "Light is a form of energy.",
+              "Light travels in a straight line."
+            ],
+            "correct_answer": "Light travels in a straight line."
+          }
+        ]
+      }
+    ],
+    "_id": "684ff88d361b010c21d8e6dc"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": "BP-134",
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [
+      {
+        "id": "9",
+        "individual_instructions": "Study the diagram below.",
+        "main_question_text": null,
+        "diagram_info": [
+          {
+            "diagram_description": "A diagram showing a person named Darwin looking at a picture on an easel. A lamp hanging from the ceiling provides light.",
+            "diagram_bounding_boxes": [
+              {
+                "x_min": 0,
+                "y_min": 155,
+                "x_max": 1000,
+                "y_max": 351
+              }
+            ],
+            "position": "above",
+            "is_table": false,
+            "page_number": "6",
+            "diagram_img_url": "https://i.ibb.co/gMYk8kzj/ea7995aa9f0f.jpg"
+          }
+        ],
+        "parts": [
+          {
+            "part_id": null,
+            "type": "MCQ",
+            "question_text": "How is Darwin able to see the picture?",
+            "options": [
+              "The picture gives off light and enters his eyes.",
+              "The light reflects the picture and enters his eyes.",
+              "The light enters his eyes and reflects on the picture.",
+              "The light falls on the picture and gets reflected into his eyes."
+            ],
+            "correct_answer": "The light falls on the picture and gets reflected into his eyes."
+          }
+        ]
+      }
+    ],
+    "_id": "684ff8b0361b010c21d8e6dd"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": "BP-135",
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": [
+      "For questions 10 to 14, write your answers in the spaces provided.",
+      "The number of marks available is shown in bracket [ ] at the end of each question or part question."
+    ],
+    "questions": [],
+    "_id": "684ff8bf361b010c21d8e6de"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": null,
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [],
+    "_id": "684ff8cb361b010c21d8e6df"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": null,
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [],
+    "_id": "684ff8da361b010c21d8e6e0"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": null,
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [],
+    "_id": "684ff8ea361b010c21d8e6e1"
+  },
+  {
+    "institution_name": null,
+    "exam_name": "Term 2 Science WA Correction Template",
+    "subject": "Science",
+    "paper": null,
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [],
+    "_id": "684ff8f9361b010c21d8e6e2"
+  },
+  {
+    "institution_name": null,
+    "exam_name": null,
+    "subject": null,
+    "paper": null,
+    "class_name": null,
+    "exam_duration": null,
+    "global_instructions": null,
+    "questions": [],
+    "_id": "684ff905361b010c21d8e6e3"
+  }
+]
