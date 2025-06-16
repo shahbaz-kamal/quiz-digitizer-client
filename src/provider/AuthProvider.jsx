@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+
 import React, { createContext, useState } from "react";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
 
@@ -18,11 +18,9 @@ const AuthProvider = ({ children }) => {
   } = useQuery({
     queryKey: ["allData", showJSONData],
     queryFn: async () => {
-      const res = await axiosPublic.get("get-all-data"); 
+      const res = await axiosPublic.get("get-all-data");
       return res.data;
     },
-    refetchOnWindowFocus: false,
-    staleTime: 0,
   });
 
   const authInfo = {

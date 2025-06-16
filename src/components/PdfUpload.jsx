@@ -35,12 +35,13 @@ const PdfUpload = () => {
     try {
       const res = await axiosPublic.post("digitalize/process-pdf", formData, {
         headers: { "Content-Type": "multipart/form-data" },
-        timeout: 1000 * 60 * 10,
+        // timeout: 1000 * 60 * 15,
       });
 
       if (res.data) {
+        console.log("response recieved");
+        // await refetch();
         setUploading(false);
-        await refetch();
         setShowJSONData(true);
       }
       console.log(res.data);
@@ -48,7 +49,7 @@ const PdfUpload = () => {
       console.error("Error uploading PDF:", error);
       setUploading(false);
       setShowJSONData(false);
-      alert(error.message);
+      alert(error);
     }
   };
 

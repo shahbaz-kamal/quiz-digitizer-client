@@ -106,7 +106,7 @@ const RebuildedQuestion = ({ modifiedData }) => {
               <div key={idx} className="mt-4">
                 {part?.question_text && (
                   <h4 className="mb-2 font-medium">
-                    {part.part_id}. {part.question_text}
+                    {part?.part_id && part.part_id}. {part.question_text}
                   </h4>
                 )}
 

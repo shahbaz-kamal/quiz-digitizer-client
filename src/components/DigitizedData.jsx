@@ -11,20 +11,20 @@ const DigitizedData = ({ allQuestion }) => {
     "paper",
     "class_name",
     "exam_duration",
-    "global_instructions"
+    "global_instructions",
   ];
-  
+  console.log("allQuestion", allQuestion);
   const modifiedData = allQuestion.map((item, index) => {
     if (index === 0) return item;
-  
+
     // Remove the specified keys from all other objects
     const newItem = { ...item };
-    keysToKeepOnlyInFirstObject.forEach(key => {
+    keysToKeepOnlyInFirstObject.forEach((key) => {
       delete newItem[key];
     });
     return newItem;
   });
-  
+
   console.log(modifiedData);
 
   return (
@@ -51,10 +51,9 @@ const DigitizedData = ({ allQuestion }) => {
           name="my_tabs_6"
           className="tab"
           aria-label="Rebuilded Questions"
-  
         />
         <div className="tab-content bg-base-100 border-base-300 p-6">
-         <RebuildedQuestion modifiedData={modifiedData}></RebuildedQuestion>
+          <RebuildedQuestion modifiedData={modifiedData}></RebuildedQuestion>
         </div>
       </div>
     </div>
